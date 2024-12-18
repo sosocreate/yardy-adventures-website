@@ -194,7 +194,7 @@ include "home_header.php"; ?>
 <form id="contact-form" method="post" action="" class="verify-gcaptcha">
 
                     <input type="hidden" name="_token" value="ABjGCJ0EpcMltu2UVB6Q5sJPrApDI5HWWNiDgYtU" autocomplete="off">                    <div class="row gy-md-4 gy-3">
-                        <div class="col-sm-12">
+                        <div class="col">
                             <h6 class="mb-2">Name</h6>
                             <input type="text" name="name" id="name" class="form-control form--control"
                                 placeholder="Name" value="" required
@@ -236,98 +236,97 @@ include "home_header.php"; ?>
         </div>
     </div>
     <section class="contact py-80">
-    <div class="shape">
+    <!-- <div class="shape">
 
-   
-        
         <img src="https://yardyadventures.com/demo/assets/presets/default/images/shape/shape7.png" alt="shape">
     </div>
-    <div class="container">
+    <div class="container"> -->
 
   <!-- ==================== Location Maps Start ==================== -->  
-
-  <div style="margin-bottom: 150px;">
+<!-- Location Maps -->
+<div style="margin-bottom: 150px;">
   <div class="container">
-    <div class="row gy-4 justify-content-center">
-        <!-- First Map -->
-        <div class="col-3">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title text-center mb-3">
-                        <i class="fas fa-map-marker-alt"></i> Negril to Yardy
-                    </h5>
-                    <div class="ratio ratio-4x3">
-                        <iframe 
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <!-- First Map -->
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-center mb-3">
+              <i class="fas fa-map-marker-alt"></i> From Negril 
+            </h5>
+            <div class="ratio ratio-4x3">
+              <  <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d121250.09614746991!2d-78.29024280876985!3d18.25281847452839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97adc20939e0d%3A0x636417c1ea8fb9d9!2sPetersfield!3m2!1d18.2616156!2d-78.0712516!4m5!1s0x8ed90d8512302c85%3A0x7bc0f136de355913!2sNegril%2C%20Jamaica!3m2!1d18.2788727!2d-78.3444296!5e0!3m2!1sen!2sjm!4v1732893356992!5m2!1sen!2sjm"
                             style="border:0;" 
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
-                    </div>
-                </div>
             </div>
+          </div>
         </div>
-        <!-- Second Map -->
-        <div class="col-3">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title text-center mb-5">
-                        <i class="fas fa-map-marker-alt"></i>Montego Bay to Yardy
-                    </h5>
-                    <div class="ratio ratio-4x3">
-                        <iframe 
+      </div>
+      <!-- Second Map -->
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-center mb-3">
+              <i class="fas fa-map-marker-alt"></i> Montego Bay to Yardy
+            </h5>
+            <div class="ratio ratio-4x3">
+              <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d242346.16838155314!2d-78.16074213281263!3d18.362840374408307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97adc20939e0d%3A0x636417c1ea8fb9d9!2sPetersfield!3m2!1d18.2616156!2d-78.0712516!4m5!1s0x8eda2a5dfd77e2b1%3A0xfcd69adb5acc5766!2sMontego%20Bay!3m2!1d18.4713814!2d-77.9228676!5e0!3m2!1sen!2sjm!4v1732893626253!5m2!1sen!2sjm"
                             style="border:0;" 
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
-                    </div>
-                </div>
             </div>
+          </div>
         </div>
-        <!-- Third Map -->
-        <div class="col-3">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title text-center mb-3">
-                        <i class="fas fa-map-marker-alt"></i> Falmouth to Yardy
-                    </h5>
-                    <div class="ratio ratio-4x3">
-                        <iframe 
+      </div>
+      <!-- Third Map -->
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-center mb-5">
+              <i class="fas fa-map-marker-alt"></i> Falmouth to Yardy
+            </h5>
+            <div class="ratio ratio-4x3">
+              <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d242309.72564819697!2d-78.02832032978495!3d18.38877903842601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97adc20939e0d%3A0x636417c1ea8fb9d9!2sPetersfield!3m2!1d18.2616156!2d-78.0712516!4m5!1s0x8eda33f8c3cfab6b%3A0x947175f8cf7d2536!2sFalmouth%2C%20Jamaica!3m2!1d18.4928457!2d-77.656476!5e0!3m2!1sen!2sjm!4v1732894125347!5m2!1sen!2sjm"
                             style="border:0;" 
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
-                    </div>
-                </div>
             </div>
+          </div>
         </div>
-        <!-- Fourth Map -->
-        <div class="col-3">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h5 class="card-title text-center mb-3">
-                        <i class="fas fa-map-marker-alt"></i> Sandals South Coast to Yardy
-                    </h5>
-                    <div class="ratio ratio-4x3">
-                        <iframe 
+      </div>
+      <!-- Fourth Map -->
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-center mb-3">
+              <i class="fas fa-map-marker-alt"></i> Sandals South Coast to Yardy
+            </h5>
+            <div class="ratio ratio-4x3">
+             <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d121296.71043150518!2d-78.11161991064677!3d18.1859114301944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97adc20939e0d%3A0x636417c1ea8fb9d9!2sPetersfield!3m2!1d18.2616156!2d-78.0712516!4m5!1s0x8ed961108449dac7%3A0xa03e8dd42965422b!2sSandals%20South%20Coast%2C%20White%20House!3m2!1d18.1086339!2d-77.99151789999999!5e0!3m2!1sen!2sjm!4v1732894223894!5m2!1sen!2sjm"
                             style="border:0;" 
                             allowfullscreen=""
                             loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
-                    </div>
-                </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
-</div>
+
 
 
  
