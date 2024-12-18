@@ -14,8 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Prepare the email
-    //$to = 'sales@yardyadventures.com';
-    $to = 'goliveja75@gmail.com';
+    $to = 'info@yardyadventures.com';
+    //$to = 'goliveja75@gmail.com';
     
     $email_subject = "New message from: $name";
     $email_body = "You have received a new message from the contact form.\n\n".

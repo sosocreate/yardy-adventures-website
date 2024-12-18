@@ -190,7 +190,7 @@ include "home_header.php"; ?>
             <div class="col-lg-6">
                <div class="contact-body">
                 <h4 class="contact__title">Send Your Message To Us</h4>
-                <form id="contact-form" method="post" action="" class="verify-gcaptcha">
+                <form id="contact-form" method="post" action="send_email.php" class="verify-gcaptcha">
 <form id="contact-form" method="post" action="" class="verify-gcaptcha">
 
                     <input type="hidden" name="_token" value="ABjGCJ0EpcMltu2UVB6Q5sJPrApDI5HWWNiDgYtU" autocomplete="off">                    <div class="row gy-md-4 gy-3">
