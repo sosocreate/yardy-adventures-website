@@ -48,7 +48,7 @@
 <link rel="stylesheet" href="https://yardyadventures.com/demo/assets/presets/default/css/custom.css">
 <link rel="stylesheet" href="https://yardyadventures.com/demo/assets/presets/default/css/color.php?color=6ee723&secondColor=525CEB">--->
 <?php
-include "home_header.php"; ?>
+include "home_contact_header.php"; ?>
          
 </head>
 <body class="ltr">
@@ -84,6 +84,15 @@ include "home_header.php"; ?>
     position: relative !important;
     overflow: hidden !important;
 }
+
+.ratio iframe {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4 / 3; /* Explicitly enforce the aspect ratio */
+    border: 0; /* Ensure no unwanted border adds extra space */
+}
+
+
 
 
     </style>
@@ -184,14 +193,19 @@ include "home_header.php"; ?>
         </nav>
     </div>
 </div>-->
-<!-- ==================== Header End Here ==================== -->
+
+<div class="d-flex justify-content-center align-items-center" style="min-height: 50vh;">
+  <h2 class="text-center">Contact Us</h2>
+</div>
+
+
     <!-- ==================== Contact Form & Map Start ==================== -->
         <div class="row gy-4 mt-5 p-5">
-            <div class="col-lg-6">
+            <div class="col-lg-6"> 
                <div class="contact-body">
-                <h4 class="contact__title">Send Your Message To Us</h4>
+                <h4 class="contact__title">Message Us</h4>
                 <form id="contact-form" method="post" action="send_email.php" class="verify-gcaptcha">
-<form id="contact-form" method="post" action="" class="verify-gcaptcha">
+                <form id="contact-form" method="post" action="" class="verify-gcaptcha">
 
                     <input type="hidden" name="_token" value="ABjGCJ0EpcMltu2UVB6Q5sJPrApDI5HWWNiDgYtU" autocomplete="off">                    <div class="row gy-md-4 gy-3">
                         <div class="col">
@@ -225,14 +239,14 @@ include "home_header.php"; ?>
                 </form>
                </div>
             </div>
-            <div class="col-lg-6 my-auto">
+            <!-- <div class="col-lg-6 my-auto">
                 <div class="thumb">
                     <div class="mt-5 mt-lg-0">
                         <img src="https://yardyadventures.com/demo/assets/images/frontend/contact_us/touristman.png"
                             class="img-fiuld" alt="image">
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <section class="contact py-80">
@@ -249,13 +263,13 @@ include "home_header.php"; ?>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
       <!-- First Map -->
       <div class="col">
-        <div class="card shadow-sm">
+      <div class="card shadow-sm h-100 d-flex flex-column">
           <div class="card-body">
-            <h5 class="card-title text-center mb-3">
+            <h5 class="card-title text-center">
               <i class="fas fa-map-marker-alt"></i> From Negril 
             </h5>
             <div class="ratio ratio-4x3">
-              <  <iframe 
+                <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d121250.09614746991!2d-78.29024280876985!3d18.25281847452839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97adc20939e0d%3A0x636417c1ea8fb9d9!2sPetersfield!3m2!1d18.2616156!2d-78.0712516!4m5!1s0x8ed90d8512302c85%3A0x7bc0f136de355913!2sNegril%2C%20Jamaica!3m2!1d18.2788727!2d-78.3444296!5e0!3m2!1sen!2sjm!4v1732893356992!5m2!1sen!2sjm"
                             style="border:0;" 
                             allowfullscreen=""
@@ -268,10 +282,10 @@ include "home_header.php"; ?>
       </div>
       <!-- Second Map -->
       <div class="col">
-        <div class="card shadow-sm">
+      <div class="card shadow-sm h-100 d-flex flex-column">
           <div class="card-body">
-            <h5 class="card-title text-center mb-3">
-              <i class="fas fa-map-marker-alt"></i> Montego Bay to Yardy
+            <h5 class="card-title text-center">
+              <i class="fas fa-map-marker-alt"></i> From Montego Bay 
             </h5>
             <div class="ratio ratio-4x3">
               <iframe 
@@ -287,10 +301,10 @@ include "home_header.php"; ?>
       </div>
       <!-- Third Map -->
       <div class="col">
-        <div class="card shadow-sm">
+      <div class="card shadow-sm h-100 d-flex flex-column">
           <div class="card-body">
-            <h5 class="card-title text-center mb-5">
-              <i class="fas fa-map-marker-alt"></i> Falmouth to Yardy
+            <h5 class="card-title text-center">
+              <i class="fas fa-map-marker-alt"></i> From Falmouth 
             </h5>
             <div class="ratio ratio-4x3">
               <iframe 
@@ -306,10 +320,10 @@ include "home_header.php"; ?>
       </div>
       <!-- Fourth Map -->
       <div class="col">
-        <div class="card shadow-sm">
+      <div class="card shadow-sm h-100 d-flex flex-column">
           <div class="card-body">
-            <h5 class="card-title text-center mb-3">
-              <i class="fas fa-map-marker-alt"></i> Sandals South Coast to Yardy
+            <h5 class="card-title text-center">
+              <i class="fas fa-map-marker-alt"></i> From Sandals South  
             </h5>
             <div class="ratio ratio-4x3">
              <iframe 
@@ -331,6 +345,7 @@ include "home_header.php"; ?>
 
  
   <!-- ==================== Location Map End ==================== -->
+   
         
         <div class="row gy-4 mb-5 justify-content-center">
             <div class="col-xl-3 col-lg-4 col-md-6 col-12">
@@ -504,6 +519,13 @@ $(document).ready(function() {
 });
 </script>
 
+<script>
+   document.querySelectorAll(".ratio iframe").forEach((iframe) => {
+    iframe.style.width = "100%";
+    iframe.style.height = iframe.offsetWidth * (3 / 4) + "px"; // Force 4:3 ratio
+});
+ 
+</script>
 
 
 
