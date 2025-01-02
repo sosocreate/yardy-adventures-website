@@ -48,7 +48,7 @@
 <link rel="stylesheet" href="https://yardyadventures.com/demo/assets/presets/default/css/custom.css">
 <link rel="stylesheet" href="https://yardyadventures.com/demo/assets/presets/default/css/color.php?color=6ee723&secondColor=525CEB">--->
 <?php
-include "home_contact_header.php"; ?>
+include "home_header.php"; ?>
          
 </head>
 <body class="ltr">
@@ -193,10 +193,11 @@ include "home_contact_header.php"; ?>
         </nav>
     </div>
 </div>-->
-
-<div class="d-flex justify-content-center align-items-center" style="min-height: 50vh;">
-  <h2 class="text-center">Contact Us</h2>
+<div class="d-flex justify-content-center align-items-center" style="min-height: 40vh;">
+  <h2 class="text-center m-0">Contact Us</h2>
 </div>
+
+
 
 
     <!-- ==================== Contact Form & Map Start ==================== -->
@@ -239,14 +240,14 @@ include "home_contact_header.php"; ?>
                 </form>
                </div>
             </div>
-            <!-- <div class="col-lg-6 my-auto">
+            <div class="col-lg-6 my-auto">
                 <div class="thumb">
                     <div class="mt-5 mt-lg-0">
                         <img src="https://yardyadventures.com/demo/assets/images/frontend/contact_us/touristman.png"
                             class="img-fiuld" alt="image">
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
     <section class="contact py-80">
@@ -255,87 +256,104 @@ include "home_contact_header.php"; ?>
         <img src="https://yardyadventures.com/demo/assets/presets/default/images/shape/shape7.png" alt="shape">
     </div>
     <div class="container"> -->
+        
 
   <!-- ==================== Location Maps Start ==================== -->  
 <!-- Location Maps -->
 <div style="margin-bottom: 150px;">
   <div class="container">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-      <!-- First Map -->
-      <div class="col">
-      <div class="card shadow-sm h-100 d-flex flex-column">
-          <div class="card-body">
-            <h5 class="card-title text-center">
-              <i class="fas fa-map-marker-alt"></i> From Negril 
-            </h5>
-            <div class="ratio ratio-4x3">
-                <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d121250.09614746991!2d-78.29024280876985!3d18.25281847452839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97adc20939e0d%3A0x636417c1ea8fb9d9!2sPetersfield!3m2!1d18.2616156!2d-78.0712516!4m5!1s0x8ed90d8512302c85%3A0x7bc0f136de355913!2sNegril%2C%20Jamaica!3m2!1d18.2788727!2d-78.3444296!5e0!3m2!1sen!2sjm!4v1732893356992!5m2!1sen!2sjm"
-                            style="border:0;" 
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <!-- First Map -->
+        <div class="col">
+            <div class="card shadow-sm" style="max-height: 300px; overflow: hidden;">
+            <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-center">
+                        <i class="fas fa-map-marker-alt"></i> From Negril
+                    </h5>
+                    <!-- Responsive Map Embed -->
+                    <div class="mt-4">
+                        <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d121236.3402434002!2d-78.287506308216!3d18.272517558157258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8ed90d8512302c85%3A0x7bc0f136de355913!2sNegril!3m2!1d18.2788727!2d-78.3444296!5e0!3m2!1sen!2sjm!4v1735654123158!5m2!1sen!2sjm" 
+                        class="w-100" 
+                        style="height: 180px; border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
+                    </div>
+                    </div>
             </div>
-          </div>
         </div>
-      </div>
+
+
+
+
       <!-- Second Map -->
       <div class="col">
-      <div class="card shadow-sm h-100 d-flex flex-column">
-          <div class="card-body">
-            <h5 class="card-title text-center">
-              <i class="fas fa-map-marker-alt"></i> From Montego Bay 
-            </h5>
-            <div class="ratio ratio-4x3">
-              <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d242346.16838155314!2d-78.16074213281263!3d18.362840374408307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97adc20939e0d%3A0x636417c1ea8fb9d9!2sPetersfield!3m2!1d18.2616156!2d-78.0712516!4m5!1s0x8eda2a5dfd77e2b1%3A0xfcd69adb5acc5766!2sMontego%20Bay!3m2!1d18.4713814!2d-77.9228676!5e0!3m2!1sen!2sjm!4v1732893626253!5m2!1sen!2sjm"
-                            style="border:0;" 
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+            <div class="card shadow-sm" style="max-height: 300px; overflow: hidden;">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-center">
+                    <i class="fas fa-map-marker-alt"></i> From Montego Bay
+                </h5>
+                <!-- Responsive Map Embed -->
+                <div class="mt-4">
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d121155.83534868366!2d-78.08691865497451!3d18.387395512853086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8eda2a5dfd77e2b1%3A0xfcd69adb5acc5766!2sMontego%20Bay!3m2!1d18.4713814!2d-77.9228676!5e0!3m2!1sen!2sjm!4v1735656173442!5m2!1sen!2sjm" 
+                    class="w-100" 
+                    style="height: 180px; border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+
       <!-- Third Map -->
       <div class="col">
-      <div class="card shadow-sm h-100 d-flex flex-column">
-          <div class="card-body">
-            <h5 class="card-title text-center">
-              <i class="fas fa-map-marker-alt"></i> From Falmouth 
-            </h5>
-            <div class="ratio ratio-4x3">
-              <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d242309.72564819697!2d-78.02832032978495!3d18.38877903842601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97adc20939e0d%3A0x636417c1ea8fb9d9!2sPetersfield!3m2!1d18.2616156!2d-78.0712516!4m5!1s0x8eda33f8c3cfab6b%3A0x947175f8cf7d2536!2sFalmouth%2C%20Jamaica!3m2!1d18.4928457!2d-77.656476!5e0!3m2!1sen!2sjm!4v1732894125347!5m2!1sen!2sjm"
-                            style="border:0;" 
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+            <div class="card shadow-sm" style="max-height: 300px; overflow: hidden;">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-center">
+                    <i class="fas fa-map-marker-alt"></i> From Falmouth
+                </h5>
+                <!-- Responsive Map Embed -->
+                <div class="mt-4">
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d242275.25586969638!2d-78.03650507692123!3d18.41328095725969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8eda33f8c3cfab6b%3A0x947175f8cf7d2536!2sFalmouth!3m2!1d18.4928457!2d-77.656476!5e0!3m2!1sen!2sjm!4v1735657602120!5m2!1sen!2sjm" 
+                    class="w-100" 
+                    style="height: 180px; border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+
       <!-- Fourth Map -->
       <div class="col">
-      <div class="card shadow-sm h-100 d-flex flex-column">
-          <div class="card-body">
-            <h5 class="card-title text-center">
-              <i class="fas fa-map-marker-alt"></i> From Sandals South  
-            </h5>
-            <div class="ratio ratio-4x3">
-             <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d121296.71043150518!2d-78.11161991064677!3d18.1859114301944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97adc20939e0d%3A0x636417c1ea8fb9d9!2sPetersfield!3m2!1d18.2616156!2d-78.0712516!4m5!1s0x8ed961108449dac7%3A0xa03e8dd42965422b!2sSandals%20South%20Coast%2C%20White%20House!3m2!1d18.1086339!2d-77.99151789999999!5e0!3m2!1sen!2sjm!4v1732894223894!5m2!1sen!2sjm"
-                            style="border:0;" 
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+            <div class="card shadow-sm" style="max-height: 300px; overflow: hidden;">
+                <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-center">
+                    <i class="fas fa-map-marker-alt"></i> From Sandals South
+                </h5>
+                <!-- Responsive Map Embed -->
+                <div class="mt-3 flex-grow-1">
+                    <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d121281.98210257878!2d-78.12215536005375!3d18.20707716257434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8ed961108449dac7%3A0xa03e8dd42965422b!2sSandals%20South%20Coast%2C%20White%20House!3m2!1d18.1086339!2d-77.99151789999999!5e0!3m2!1sen!2sjm!4v1735657845365!5m2!1sen!2sjm" 
+                    class="w-100" 
+                    style="height: 180px; border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                </div>
             </div>
-          </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -352,7 +370,7 @@ include "home_contact_header.php"; ?>
                 <div class="card">
                     <div class="content">
                         <h5><i class="fas fa-map-marker-alt"></i> Address</h5>
-                        <p> Fort William, Petersfield PO, Westmoreland, JAMAICA
+                        <p> Fort William, Petersfield, Westmoreland
                         </p>
                     </div>
                 </div>
