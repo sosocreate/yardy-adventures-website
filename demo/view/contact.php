@@ -197,68 +197,53 @@ include "home_header.php"; ?>
   <h2 class="text-center m-0">Contact Us</h2>
 </div>
 
-
-
-
-    <!-- ==================== Contact Form & Map Start ==================== -->
-        <div class="row gy-4 mt-5 p-5">
-            <div class="col-lg-6"> 
-               <div class="contact-body">
-                <h4 class="contact__title">Message Us</h4>
-                <form id="contact-form" method="post" action="send_email.php" class="verify-gcaptcha">
-                <form id="contact-form" method="post" action="" class="verify-gcaptcha">
-
-                    <input type="hidden" name="_token" value="ABjGCJ0EpcMltu2UVB6Q5sJPrApDI5HWWNiDgYtU" autocomplete="off">                    <div class="row gy-md-4 gy-3">
-                        <div class="col">
-                            <h6 class="mb-2">Name</h6>
-                            <input type="text" name="name" id="name" class="form-control form--control"
-                                placeholder="Name" value="" required
-                                >
+<section>
+    <div class="row gy-4 mb-5 justify-content-center">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="card">
+                        <div class="content">
+                            <h5><i class="fas fa-map-marker-alt"></i> Address</h5>
+                            <p> Fort William, Petersfield, Westmoreland
+                            </p>
                         </div>
-                        <div class="col-sm-12">
-                            <h6 class="mb-2">Email</h6>
-                            <input type="email" name="email" id="email" class="form-control form--control"
-                                placeholder="Email" value="" require
-                                 >
-                        </div>
-                        <div class="col-sm-12">
-                            <h6 class="mb-2">Subject</h6>
-                            <input type="text" name="subject" id="msg_subject" class="form-control form--control"
-                                placeholder="Subject" required>
-                        </div>
-                        <div class="col-sm-12">
-                            <h6 class="mb-2">Message</h6>
-                            <textarea class="form--control" name="message"
-                                placeholder="Write Your Message"></textarea>
-                        </div>
-                        <div class="col-sm-12">
-                                                    </div>
-                        <div class="col-sm-12">
-                            <button class="btn--base" id="recaptcha">Send Message</button>
-                        </div>
-                    </div>
-                </form>
-               </div>
-            </div>
-            <div class="col-lg-6 my-auto">
-                <div class="thumb">
-                    <div class="mt-5 mt-lg-0">
-                        <img src="https://yardyadventures.com/demo/assets/images/frontend/contact_us/touristman.png"
-                            class="img-fiuld" alt="image">
                     </div>
                 </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="card">
+                        <div class="content">
+                            <h5><i class="fas fa-envelope"></i> Email</h5>
+                            <a href="info@yardyadventures.com">info@yardyadventures.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="card">
+                        <div class="content">
+                            <h5><i class="fas fa-phone-square"></i>Whatsapp Phone</h5>
+                            <a href="tel:8768378082">8768378082</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="card">
+                        <div class="content">
+                            <h5><i class="fas fa-phone-square"></i>Telephone</h5>
+                            <a href="tel:8767811741">8767811741</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                    <div class="card">
+                        <div class="content">
+                            <h5><i class="fas fa-headset"></i> Support</h5>
+                            <p>24/7 Support</p>
+                        </div>
+                    </div>
+                </div> -->
             </div>
-        </div>
-    </div>
-    <section class="contact py-80">
-    <!-- <div class="shape">
 
-        <img src="https://yardyadventures.com/demo/assets/presets/default/images/shape/shape7.png" alt="shape">
-    </div>
-    <div class="container"> -->
-        
-
-  <!-- ==================== Location Maps Start ==================== -->  
+ </section>
+          <!-- ==================== Location Maps Start ==================== -->  
 <!-- Location Maps -->
 <div style="margin-bottom: 150px;">
   <div class="container">
@@ -363,52 +348,71 @@ include "home_header.php"; ?>
 
  
   <!-- ==================== Location Map End ==================== -->
+
+
+    <!-- ==================== Contact Form & Map Start ==================== -->
+        <div class="row gy-4 mt-5 p-5">
+            <div class="col-lg-6"> 
+               <div class="contact-body">
+                <h4 class="contact__title">Message Us</h4>
+                <form id="contact-form" method="post" action="send_email.php" class="verify-gcaptcha">
+                <form id="contact-form" method="post" action="" class="verify-gcaptcha">
+
+                    <input type="hidden" name="_token" value="ABjGCJ0EpcMltu2UVB6Q5sJPrApDI5HWWNiDgYtU" autocomplete="off">                    <div class="row gy-md-4 gy-3">
+                        <div class="col">
+                            <h6 class="mb-2">Name</h6>
+                            <input type="text" name="name" id="name" class="form-control form--control"
+                                placeholder="Name" value="" required
+                                >
+                        </div>
+                        <div class="col-sm-12">
+                            <h6 class="mb-2">Email</h6>
+                            <input type="email" name="email" id="email" class="form-control form--control"
+                                placeholder="Email" value="" require
+                                 >
+                        </div>
+                        <div class="col-sm-12">
+                            <h6 class="mb-2">Subject</h6>
+                            <input type="text" name="subject" id="msg_subject" class="form-control form--control"
+                                placeholder="Subject" required>
+                        </div>
+                        <div class="col-sm-12">
+                            <h6 class="mb-2">Message</h6>
+                            <textarea class="form--control" name="message"
+                                placeholder="Write Your Message"></textarea>
+                        </div>
+                        <div class="col-sm-12">
+                                                    </div>
+                        <div class="col-sm-12">
+                            <button class="btn--base" id="recaptcha">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+               </div>
+            </div>
+            <div class="col-lg-6 my-auto">
+                <div class="thumb">
+                    <div class="mt-5 mt-lg-0">
+                        <img src="https://yardyadventures.com/demo/assets/images/frontend/contact_us/touristman.png"
+                            class="img-fiuld" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="contact py-80">
+    <!-- <div class="shape">
+
+        <img src="https://yardyadventures.com/demo/assets/presets/default/images/shape/shape7.png" alt="shape">
+    </div>
+    <div class="container"> -->
+        
+
+
    
         
-        <div class="row gy-4 mb-5 justify-content-center">
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                <div class="card">
-                    <div class="content">
-                        <h5><i class="fas fa-map-marker-alt"></i> Address</h5>
-                        <p> Fort William, Petersfield, Westmoreland
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                <div class="card">
-                    <div class="content">
-                        <h5><i class="fas fa-envelope"></i> Email</h5>
-                        <a href="info@yardyadventures.com">info@yardyadventures.com</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                <div class="card">
-                    <div class="content">
-                        <h5><i class="fas fa-phone-square"></i>Whatsapp Phone</h5>
-                        <a href="tel:8768378082">8768378082</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                <div class="card">
-                    <div class="content">
-                        <h5><i class="fas fa-phone-square"></i>Telephone</h5>
-                        <a href="tel:8767811741">8767811741</a>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                <div class="card">
-                    <div class="content">
-                        <h5><i class="fas fa-headset"></i> Support</h5>
-                        <p>24/7 Support</p>
-                    </div>
-                </div>
-            </div> -->
-        </div>
-</section>
+   
+
 <!-- ==================== Contact Form & Map End ==================== -->
   
          <!-- ==================== Breadcumb Start ==================== -->
