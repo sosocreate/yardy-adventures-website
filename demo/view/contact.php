@@ -197,57 +197,55 @@ include "home_header.php"; ?>
   <h2 class="text-center m-0">Contact Us</h2>
 </div>
 
-<section>
-    <div class="row gy-4 mb-5 justify-content-center">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                    <div class="card">
-                        <div class="content">
-                            <h5><i class="fas fa-map-marker-alt"></i> Address</h5>
-                            <p> Fort William, Petersfield, Westmoreland
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                    <div class="card">
-                        <div class="content">
-                            <h5><i class="fas fa-envelope"></i> Email</h5>
-                            <a href="info@yardyadventures.com">info@yardyadventures.com</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                    <div class="card">
-                        <div class="content">
-                            <h5><i class="fas fa-phone-square"></i>Whatsapp Phone</h5>
-                            <a href="tel:8768378082">8768378082</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                    <div class="card">
-                        <div class="content">
-                            <h5><i class="fas fa-phone-square"></i>Telephone</h5>
-                            <a href="tel:8767811741">8767811741</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-xl-3 col-lg-4 col-md-6 col-12">
-                    <div class="card">
-                        <div class="content">
-                            <h5><i class="fas fa-headset"></i> Support</h5>
-                            <p>24/7 Support</p>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
+<section style="display: flex;">
+  <!-- Cards Container -->
+  <div
+    style="
+      position: sticky;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.7); /* Transparent background */
+      backdrop-filter: blur(8px); /* Optional: Blur effect */
+      width: 300px;
+    "
+  >
+    <div class="card card-with-line">
+      <div class="content">
+        <h5><i class="fas fa-map-marker-alt"></i> Address</h5>
+        <p>Fort William, Petersfield, Westmoreland</p>
+      </div>
+    </div>
+    <div class="card card-with-line">
+      <div class="content">
+        <h5><i class="fas fa-envelope"></i> Email</h5>
+        <a href="mailto:info@yardyadventures.com">info@yardyadventures.com</a>
+      </div>
+    </div>
+    <div class="card card-with-line">
+      <div class="content">
+        <h5><i class="fas fa-phone-square"></i> Whatsapp Phone</h5>
+        <a href="tel:8768378082">8768378082</a>
+      </div>
+    </div>
+    <div class="card card-with-line">
+      <div class="content">
+        <h5><i class="fas fa-phone-square"></i> Telephone</h5>
+        <a href="tel:8767811741">8767811741</a>
+      </div>
+    </div>
+  </div>
 
- </section>
-          <!-- ==================== Location Maps Start ==================== -->  
-<!-- Location Maps -->
+  <!-- Main Content -->
+<!-- ==================== Location Maps Start ==================== -->
+
 <div style="margin-bottom: 150px;">
   <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
         <!-- First Map -->
         <div class="col">
             <div class="card shadow-sm" style="max-height: 300px; overflow: hidden;">
@@ -260,7 +258,7 @@ include "home_header.php"; ?>
                         <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d121236.3402434002!2d-78.287506308216!3d18.272517558157258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8ed90d8512302c85%3A0x7bc0f136de355913!2sNegril!3m2!1d18.2788727!2d-78.3444296!5e0!3m2!1sen!2sjm!4v1735654123158!5m2!1sen!2sjm" 
                         class="w-100" 
-                        style="height: 180px; border:0;" 
+                        style="height: 300px; border:0;" 
                         allowfullscreen="" 
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade">
@@ -269,10 +267,6 @@ include "home_header.php"; ?>
                     </div>
             </div>
         </div>
-
-
-
-
       <!-- Second Map -->
       <div class="col">
             <div class="card shadow-sm" style="max-height: 300px; overflow: hidden;">
@@ -285,7 +279,7 @@ include "home_header.php"; ?>
                     <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d121155.83534868366!2d-78.08691865497451!3d18.387395512853086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8eda2a5dfd77e2b1%3A0xfcd69adb5acc5766!2sMontego%20Bay!3m2!1d18.4713814!2d-77.9228676!5e0!3m2!1sen!2sjm!4v1735656173442!5m2!1sen!2sjm" 
                     class="w-100" 
-                    style="height: 180px; border:0;" 
+                    style="height: 300px; border:0;" 
                     allowfullscreen="" 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade">
@@ -294,7 +288,6 @@ include "home_header.php"; ?>
                 </div>
             </div>
         </div>
-
       <!-- Third Map -->
       <div class="col">
             <div class="card shadow-sm" style="max-height: 300px; overflow: hidden;">
@@ -307,7 +300,7 @@ include "home_header.php"; ?>
                     <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d242275.25586969638!2d-78.03650507692123!3d18.41328095725969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8eda33f8c3cfab6b%3A0x947175f8cf7d2536!2sFalmouth!3m2!1d18.4928457!2d-77.656476!5e0!3m2!1sen!2sjm!4v1735657602120!5m2!1sen!2sjm" 
                     class="w-100" 
-                    style="height: 180px; border:0;" 
+                    style="height: 300px; border:0;" 
                     allowfullscreen="" 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade">
@@ -316,7 +309,6 @@ include "home_header.php"; ?>
                 </div>
             </div>
         </div>
-
       <!-- Fourth Map -->
       <div class="col">
             <div class="card shadow-sm" style="max-height: 300px; overflow: hidden;">
@@ -329,7 +321,7 @@ include "home_header.php"; ?>
                     <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d121281.98210257878!2d-78.12215536005375!3d18.20707716257434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8ed961108449dac7%3A0xa03e8dd42965422b!2sSandals%20South%20Coast%2C%20White%20House!3m2!1d18.1086339!2d-77.99151789999999!5e0!3m2!1sen!2sjm!4v1735657845365!5m2!1sen!2sjm" 
                     class="w-100" 
-                    style="height: 180px; border:0;" 
+                    style="height: 300px; border:0;" 
                     allowfullscreen="" 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade">
@@ -345,9 +337,43 @@ include "home_header.php"; ?>
 </div>
 
 
+  <!-- ==================== Location Map End ==================== -->
+
+</section>
+
+<style>
+  /* Card Styling */
+  .card-with-line {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border: none; /* No border */
+    border-radius: 8px; /* Smooth corners */
+    padding: 1rem;
+    margin-bottom: 2rem; /* Add space between cards */
+    width: 100%; /* Full width inside the rail */
+    z-index: 1; /* Ensure it stays above the line */
+  }
 
  
-  <!-- ==================== Location Map End ==================== -->
+
+  /* Line Between Cards */
+  .card-with-line:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -2rem; /* Connect to the next card */
+    left: 50%; /* Middle of the card */
+    transform: translateX(-50%); /* Center alignment */
+    width: 2px; /* Line thickness */
+    height: 2rem; /* Space between cards */
+    background-color: #ccc; /* Line color */
+    z-index: 0; /* Place behind the card */
+  }
+</style>
+
+
+
+ 
 
 
     <!-- ==================== Contact Form & Map Start ==================== -->
