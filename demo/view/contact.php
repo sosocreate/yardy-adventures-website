@@ -198,150 +198,147 @@ include "home_header.php"; ?>
 </div>
 
 <section style="display: flex; align-items: flex-start; gap: 2rem;">
-      <!-- Cards Container -->
-      <div class="sticky-sidebar">
-      <div class="card card-with-line">
-        <div class="content">
-          <h5><i class="fas fa-map-marker-alt"></i> Address</h5>
-          <p>Fort William, Petersfield, Westmoreland</p>
-        </div>
-      </div>
-      <div class="card card-with-line">
-        <div class="content">
-          <h5><i class="fas fa-envelope"></i> Email</h5>
-          <a href="mailto:info@yardyadventures.com">info@yardyadventures.com</a>
-        </div>
-      </div>
-      <div class="card card-with-line">
-        <div class="content">
-          <h5><i class="fas fa-phone-square"></i> Whatsapp Phone</h5>
-          <a href="tel:8768378082">8768378082</a>
-        </div>
-      </div>
-      <div class="card card-with-line">
-        <div class="content">
-          <h5><i class="fas fa-phone-square"></i> Telephone</h5>
-          <a href="tel:8767811741">8767811741</a>
-        </div>
+  <!-- Cards Container -->
+  <div class="sticky-sidebar">
+    <div class="card card-with-line">
+      <div class="content">
+        <h5><i class="fas fa-map-marker-alt"></i> Address</h5>
+        <p>Fort William, Petersfield, Westmoreland</p>
       </div>
     </div>
+    <div class="card card-with-line">
+      <div class="content">
+        <h5><i class="fas fa-envelope"></i> Email</h5>
+        <a href="mailto:info@yardyadventures.com">info@yardyadventures.com</a>
+      </div>
+    </div>
+    <div class="card card-with-line">
+      <div class="content">
+        <h5><i class="fas fa-phone-square"></i> Whatsapp Phone</h5>
+        <a href="tel:8768378082">8768378082</a>
+      </div>
+    </div>
+    <div class="card card-with-line">
+      <div class="content">
+        <h5><i class="fas fa-phone-square"></i> Telephone</h5>
+        <a href="tel:8767811741">8767811741</a>
+      </div>
+    </div>
+  </div>
 
-<!-- Add this CSS -->
-<style>
-  section {
-    display: flex;
-    align-items: flex-start; /* Aligns items at the top */
-    gap: 2rem; /* Adds space between sidebar and form */
-}
+  <!-- Add this CSS -->
+  <style>
+    section {
+      display: flex;
+      align-items: flex-start; /* Aligns items at the top */
+      gap: 2rem; /* Adds space between sidebar and form */
+    }
 
-.sticky-sidebar {
-    position: sticky;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    background: transparent; /* Ensure full transparency */
-    backdrop-filter: blur(8px); /* Apply blur effect */
-    width: 300px;
-   
-}
-
-
-
-.card {
-    margin-bottom: 1rem;
-    padding: 1rem;
-    background: transparent; /* Make cards transparent */
-    border-radius: 8px;
-    box-shadow: none; /* Remove the box shadow if needed */
-}
-
-
-  .card h5 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1rem;
-  }
-
-  .card a {
-    color: #007bff;
-    text-decoration: none;
-  }
-
-  .card a:hover {
-    text-decoration: underline;
-  }
-
-  /* Media query for responsiveness */
-  @media (max-width: 768px) {
     .sticky-sidebar {
-      position: relative; /* Removes sticky behavior */
-      height: auto; /* Automatically adjust height */
-      width: 100%; /* Full width on smaller screens */
-      padding: 0.5rem; /* Adjust padding */
+      position: sticky;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      background: transparent; /* Ensure full transparency */
+      backdrop-filter: blur(8px); /* Apply blur effect */
+      width: 300px;
     }
 
     .card {
-      margin-bottom: 0.5rem; /* Reduced spacing between cards */
-      padding: 0.75rem; /* Adjust padding for smaller screens */
+      margin-bottom: 1rem;
+      padding: 1rem;
+      background: transparent; /* Make cards transparent */
+      border-radius: 8px;
+      box-shadow: none; /* Remove the box shadow if needed */
     }
 
     .card h5 {
-      font-size: 0.9rem; /* Smaller font size for headers */
+      margin: 0 0 0.5rem 0;
+      font-size: 1rem;
     }
-  }
-</style>
 
+    .card a {
+      color: #000;
+      text-decoration: none;
+    }
 
- <!-- Main Content -->
-<div style="flex: 1; padding: 2rem;">
-  <!-- ==================== Contact Form Start ==================== -->
-  <div class="row gy-4 mt-5 p-5" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
-    <!-- Contact Form Section -->
-    <div class="col-lg-6" style="flex: 1; min-width: 300px;">
-      <div class="contact-body">
-        <h4 class="contact__title">Message Us</h4>
-        <form id="contact-form" method="post" action="send_email.php" class="verify-gcaptcha">
-          <input type="hidden" name="_token" value="ABjGCJ0EpcMltu2UVB6Q5sJPrApDI5HWWNiDgYtU" autocomplete="off">
-          <div class="row gy-md-4 gy-3">
-            <div class="col">
-              <h6 class="mb-2">Name</h6>
-              <input type="text" name="name" id="name" class="form-control form--control" placeholder="Name" required>
-            </div>
-            <div class="col-sm-12">
-              <h6 class="mb-2">Email</h6>
-              <input type="email" name="email" id="email" class="form-control form--control" placeholder="Email" required>
-            </div>
-            <div class="col-sm-12">
-              <h6 class="mb-2">Subject</h6>
-              <input type="text" name="subject" id="msg_subject" class="form-control form--control" placeholder="Subject" required>
-            </div>
-            <div class="col-sm-12">
-              <h6 class="mb-2">Message</h6>
-              <textarea class="form--control" name="message" placeholder="Write Your Message"></textarea>
-            </div>
-            <div class="col-sm-12">
-              <button class="btn--base" id="recaptcha">Send Message</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
+    .card a:hover {
+      text-decoration: underline;
+    }
 
-    <!-- Image Section -->
-     <div class="col-lg-6" style="flex: 1; min-width: 300px; text-align: center;">
-      <div class="thumb">
-        <div class="mt-5 mt-lg-0">
-          <img src="https://yardyadventures.com/demo/assets/images/frontend/contact_us/touristman.png"
-               class="img-fluid" alt="image" style="max-width: 100%; height: auto;">
+    /* Media query for responsiveness */
+    @media (max-width: 768px) {
+      .sticky-sidebar {
+        position: relative; /* Removes sticky behavior */
+        height: auto; /* Automatically adjust height */
+        width: 100%; /* Full width on smaller screens */
+        padding: 0.5rem; /* Adjust padding */
+      }
+
+      .card {
+        margin-bottom: 0.5rem; /* Reduced spacing between cards */
+        padding: 0.75rem; /* Adjust padding for smaller screens */
+      }
+
+      .card h5 {
+        font-size: 0.9rem; /* Smaller font size for headers */
+      }
+    }
+  </style>
+
+  <!-- Main Content -->
+  <div style="flex: 1; padding: 2rem;">
+    <!-- ==================== Contact Form Start ==================== -->
+    <div class="row gy-4 mt-5 p-5" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
+      <!-- Contact Form Section -->
+      <div class="col-lg-6" style="flex: 1; min-width: 300px;">
+        <div class="contact-body">
+          <h4 class="contact__title">Message Us</h4>
+          <form id="contact-form" method="post" action="send_email.php" class="verify-gcaptcha">
+            <input type="hidden" name="_token" value="ABjGCJ0EpcMltu2UVB6Q5sJPrApDI5HWWNiDgYtU" autocomplete="off">
+            <div class="row gy-md-4 gy-3">
+              <div class="col">
+                <h6 class="mb-2">Name</h6>
+                <input type="text" name="name" id="name" class="form-control form--control" placeholder="Name" required>
+              </div>
+              <div class="col-sm-12">
+                <h6 class="mb-2">Email</h6>
+                <input type="email" name="email" id="email" class="form-control form--control" placeholder="Email" required>
+              </div>
+              <div class="col-sm-12">
+                <h6 class="mb-2">Subject</h6>
+                <input type="text" name="subject" id="msg_subject" class="form-control form--control" placeholder="Subject" required>
+              </div>
+              <div class="col-sm-12">
+                <h6 class="mb-2">Message</h6>
+                <textarea class="form--control" name="message" placeholder="Write Your Message"></textarea>
+              </div>
+              <div class="col-sm-12">
+                <button class="btn--base" id="recaptcha">Send Message</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-    </div> 
+
+      <!-- Image Section -->
+      <div class="col-lg-6" style="flex: 1; min-width: 300px; text-align: center;">
+        <div class="thumb">
+          <div class="mt-5 mt-lg-0">
+            <img src="https://yardyadventures.com/demo/assets/images/frontend/contact_us/touristman.png"
+                 class="img-fluid" alt="image" style="max-width: 100%; height: auto;">
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-<!-- ==================== Contact Form End ==================== -->
+  <!-- ==================== Contact Form End ==================== -->
+</section>
+
 
 </section>
 
