@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage">
 <head>
@@ -56,7 +55,118 @@ include "home_header.php"; ?>
     
     <style>
         
-        
+        .row1 {
+  display: flex;
+  flex-wrap: wrap; /* Ensures cards wrap when needed */
+  gap: 12px; /* Adjusted spacing for better balance */
+  justify-content: center; /* Centers cards */
+}
+
+.sticky-sidebar {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  justify-content: center;
+  align-items: center;
+  gap: 12px; /* Space between cards */
+  padding: 10px;
+}
+
+.carda {
+  flex: 1 1 calc(25% - 12px); /* 4 items per row on larger screens */
+  min-width: 140px; /* Prevents excessive shrinking */
+  max-width: 180px; /* Keeps items visually balanced */
+  text-align: center;
+  background: #28B9F5;
+}
+
+  .mocha {
+  position: sticky;
+  top: 10rem; 
+  height: auto;
+  max-width: 300px;
+  flex-shrink: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: transparent;
+  backdrop-filter: blur(8px);
+}
+
+h1{
+  color: #427A27;
+}
+/* 
+.carda {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #28B9F5;
+  border-radius: 8px;
+  box-shadow: none;
+} */
+
+.carda .tile {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: #fff;
+}
+#recaptcha{
+  background-color: #28B9F5;
+  color: #000;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.carda a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.carda a:hover {
+  text-decoration: underline;
+}
+
+/* Ensure main content grows properly */
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .sticky-sidebar {
+    flex-wrap: nowrap; /* Keeps cards in a single row */
+    overflow-x: auto; /* Enables smooth horizontal scrolling */
+    white-space: nowrap; /* Prevents text wrapping */
+    justify-content: flex-start; /* Aligns items left */
+    padding: 10px 5px;
+    gap: 10px; /* Slightly reduced for better spacing */
+  }
+
+  .carda {
+    flex: 0 0 auto; /* Prevents cards from stretching unevenly */
+    width: 160px; /* Fixed width for better readability */
+    min-width: 120px; /* Ensures proper spacing */
+    max-width: 180px;
+  }
+}
+
+.jb{
+  grid-template-columns: repeat(5,auto);
+  grid-template-rows: auto;
+  display: grid;
+}
+
+.jb .row1{
+  grid-column: span 1;
+}
+
+.jb .row2{
+  grid-column: span 4;
+}
         .qr{
             width:150px;
 
@@ -193,108 +303,44 @@ include "home_header.php"; ?>
         </nav>
     </div>
 </div>-->
-<div class="d-flex justify-content-center align-items-center" style="min-height: 40vh;">
-  <h2 class="text-center m-0 ">Contact Us</h2>
-</div>
-
-<section style="display: flex; align-items: flex-start; gap: 2rem;">
-  <!-- Cards Container -->
-  <div class="sticky-sidebar">
-    <div class="card card-with-line">
-      <div class="content">
-        <h5><i class="fas fa-map-marker-alt"></i> Address</h5>
-        <p>Fort William, Petersfield, Westmoreland</p>
-      </div>
+<section style="display: flex; align-items: flex-start; gap: 2rem; padding: 2rem; ">
+ 
+</section>
+<section class="jb">
+   <div class="row1">
+          <!-- Cards Container -->
+          <div class="sticky-sidebar mocha ">
+              <div class="carda card-with-line">
+                <div class="content">
+                  <h5 class="tile"><i class="fas fa-map-marker-alt"></i> Address</h5>
+                  <a href="">Fort William, Petersfield, Westmoreland</a>
+                </div>
+              </div>
+              <div class="carda card-with-line">
+                <div class="content">
+                  <h5 class="tile"><i class="fas fa-envelope"></i> Email</h5>
+                  <a href="mailto:info@yardyadventures.com">info@yardyadventures.com</a>
+                </div>
+              </div>
+              <div class="carda card-with-line">
+                <div class="content">
+                  <h5 class="tile"><i class="fas fa-phone-square"></i> Whatsapp Phone</h5>
+                  <a href="tel:8768378082">8768378082</a>
+                </div>
+              </div>
+              <div class="carda card-with-line">
+                <div class="content">
+                  <h5 class="tile"><i class="fas fa-phone-square"></i> Telephone</h5>
+                  <a href="tel:8767811741">8767811741</a>
+                </div>
+              </div>
+            </div>
     </div>
-    <div class="card card-with-line">
-      <div class="content">
-        <h5><i class="fas fa-envelope"></i> Email</h5>
-        <a href="mailto:info@yardyadventures.com">info@yardyadventures.com</a>
-      </div>
-    </div>
-    <div class="card card-with-line">
-      <div class="content">
-        <h5><i class="fas fa-phone-square"></i> Whatsapp Phone</h5>
-        <a href="tel:8768378082">8768378082</a>
-      </div>
-    </div>
-    <div class="card card-with-line">
-      <div class="content">
-        <h5><i class="fas fa-phone-square"></i> Telephone</h5>
-        <a href="tel:8767811741">8767811741</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Add this CSS -->
-  <style>
-    section {
-      display: flex;
-      align-items: flex-start; /* Aligns items at the top */
-      gap: 2rem; /* Adds space between sidebar and form */
-    }
-
-    .sticky-sidebar {
-      position: sticky;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      padding: 1rem;
-      background: transparent; /* Ensure full transparency */
-      backdrop-filter: blur(8px); /* Apply blur effect */
-      width: 300px;
-    }
-
-    .card {
-      margin-bottom: 1rem;
-      padding: 1rem;
-      background: transparent; /* Make cards transparent */
-      border-radius: 8px;
-      box-shadow: none; /* Remove the box shadow if needed */
-    }
-
-    .card h5 {
-      margin: 0 0 0.5rem 0;
-      font-size: 1rem;
-    }
-
-    .card a {
-      color: #000;
-      text-decoration: none;
-    }
-
-    .card a:hover {
-      text-decoration: underline;
-    }
-
-    /* Media query for responsiveness */
-    @media (max-width: 768px) {
-      .sticky-sidebar {
-        position: relative; /* Removes sticky behavior */
-        height: auto; /* Automatically adjust height */
-        width: 100%; /* Full width on smaller screens */
-        padding: 0.5rem; /* Adjust padding */
-      }
-
-      .card {
-        margin-bottom: 0.5rem; /* Reduced spacing between cards */
-        padding: 0.75rem; /* Adjust padding for smaller screens */
-      }
-
-      .card h5 {
-        font-size: 0.9rem; /* Smaller font size for headers */
-      }
-    }
-  </style>
-
-  <!-- Main Content -->
-  <div style="flex: 1; padding: 2rem;">
-    <!-- ==================== Contact Form Start ==================== -->
+ <!-- Main Content -->
+  <div class="row2">
+  <div class="main-content">
+    <!-- Contact Form Section -->
     <div class="row gy-4 mt-5 p-5" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
-      <!-- Contact Form Section -->
       <div class="col-lg-6" style="flex: 1; min-width: 300px;">
         <div class="contact-body">
           <h4 class="contact__title">Message Us</h4>
@@ -336,16 +382,11 @@ include "home_header.php"; ?>
       </div>
     </div>
   </div>
-  <!-- ==================== Contact Form End ==================== -->
-</section>
-
-
-</section>
-
-
+  </div>
+ </section>
 
 <div class="d-flex justify-content-center align-items-center" style="height: auto; padding: 1rem 0;">
-  <h2 class="text-center m-0 p-0">Direction to Yardie</h2>
+  <h1 class="text-center m-0 p-0">Direction to Yardie</h1>
 </div>
 
 <!-- ==================== Location Maps Start ==================== -->
@@ -589,9 +630,3 @@ $(document).ready(function() {
 });
  
 </script>
-
-
-
-
-
-
