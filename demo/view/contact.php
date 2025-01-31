@@ -57,31 +57,15 @@ include "home_header.php"; ?>
         
         .row1 {
   display: flex;
-  flex-wrap: wrap; /* Ensures cards wrap when needed */
-  gap: 12px; /* Adjusted spacing for better balance */
-  justify-content: center; /* Centers cards */
-}
-
-.sticky-sidebar {
-  display: flex;
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  flex-wrap: wrap;
+  gap: 12px;
   justify-content: center;
-  align-items: center;
-  gap: 12px; /* Space between cards */
-  padding: 10px;
 }
 
-.carda {
-  flex: 1 1 calc(25% - 12px); /* 4 items per row on larger screens */
-  min-width: 140px; /* Prevents excessive shrinking */
-  max-width: 180px; /* Keeps items visually balanced */
-  text-align: center;
-  background: #28B9F5;
-}
-
-  .mocha {
+/* Sidebar - Desktop */
+.mocha {
   position: sticky;
-  top: 10rem; 
+  top: 10rem;
   height: auto;
   max-width: 300px;
   flex-shrink: 0;
@@ -91,6 +75,40 @@ include "home_header.php"; ?>
   padding: 1rem;
   background: transparent;
   backdrop-filter: blur(8px);
+}
+
+/* Card Styling */
+.carda {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #28B9F5;
+  border-radius: 8px;
+  box-shadow: none;
+  text-align: center;
+  min-width: 140px;
+  max-width: 180px;
+}
+
+/* Card Title */
+.carda .tile {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.carda a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.carda a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content Layout */
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
 }
 
 h1{
@@ -105,11 +123,11 @@ h1{
   box-shadow: none;
 } */
 
-.carda .tile {
+/* .carda .tile {
   margin: 0 0 0.5rem 0;
   font-size: 1rem;
   color: #fff;
-}
+} */
 #recaptcha{
   background-color: #28B9F5;
   color: #000;
@@ -118,7 +136,7 @@ h1{
   border-radius: 8px;
   cursor: pointer;
 }
-
+/* 
 .carda a {
   color: #fff;
   text-decoration: none;
@@ -128,39 +146,47 @@ h1{
   text-decoration: underline;
 }
 
-/* Ensure main content grows properly */
+
 .main-content {
   flex-grow: 1;
   padding: 2rem;
-}
+} */
 
 
-/* Mobile Adjustments */
 @media (max-width: 768px) {
-  .sticky-sidebar {
-    flex-wrap: nowrap; /* Keeps cards in a single row */
-    overflow-x: auto; /* Enables smooth horizontal scrolling */
-    white-space: nowrap; /* Prevents text wrapping */
-    justify-content: flex-start; /* Aligns items left */
-    padding: 10px 5px;
-    gap: 10px; /* Slightly reduced for better spacing */
+  .row1 {
+    flex-direction: column;
+    align-items: center;
   }
 
+  /* Make Sidebar Scroll Horizontally */
+  .sticky-sidebar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: flex-start;
+    padding: 10px 5px;
+    gap: 10px;
+    width: 100%;
+  }
+
+  /* Cards in a Row */
   .carda {
-    flex: 0 0 auto; /* Prevents cards from stretching unevenly */
-    width: 160px; /* Fixed width for better readability */
-    min-width: 120px; /* Ensures proper spacing */
+    flex: 0 0 auto;
+    width: 160px;
+    min-width: 120px;
     max-width: 180px;
   }
 }
 
-.jb{
-  grid-template-columns: repeat(5,auto);
+
+.jb {
+  grid-template-columns: repeat(5, auto);
   grid-template-rows: auto;
   display: grid;
 }
 
-.jb .row1{
+.jb .row1 {
   grid-column: span 1;
 }
 
