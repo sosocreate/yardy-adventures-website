@@ -55,7 +55,7 @@ include "home_header.php"; ?>
     
     <style>
         
-        .row1 {
+ .row1 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -64,8 +64,8 @@ include "home_header.php"; ?>
 
 /* Sidebar - Desktop */
 .mocha {
-  position: sticky;
-  top: 10rem;
+  /* position: sticky; */
+  top: 20rem;
   height: auto;
   max-width: 300px;
   flex-shrink: 0;
@@ -112,46 +112,22 @@ include "home_header.php"; ?>
 }
 
 h1{
-  color: #427A27;
-}
-/* 
-.carda {
-  margin-bottom: 1rem;
-  padding: 1rem;
-  background: #28B9F5;
-  border-radius: 8px;
-  box-shadow: none;
-} */
-
-/* .carda .tile {
-  margin: 0 0 0.5rem 0;
-  font-size: 1rem;
   color: #fff;
-} */
+}
+
 #recaptcha{
   background-color: #28B9F5;
-  color: #000;
+  color: #fff;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   cursor: pointer;
-}
-/* 
-.carda a {
-  color: #fff;
-  text-decoration: none;
+  border: #fff 2px solid;
 }
 
-.carda a:hover {
-  text-decoration: underline;
+#recaptcha:hover{
+  color: #000;
 }
-
-
-.main-content {
-  flex-grow: 1;
-  padding: 2rem;
-} */
-
 
 @media (max-width: 768px) {
   .row1 {
@@ -159,8 +135,8 @@ h1{
     align-items: center;
   }
 
-  /* Make Sidebar Scroll Horizontally */
-  .sticky-sidebar {
+  
+  /* .sticky-sidebar {
     flex-wrap: nowrap;
     overflow-x: auto;
     white-space: nowrap;
@@ -168,9 +144,8 @@ h1{
     padding: 10px 5px;
     gap: 10px;
     width: 100%;
-  }
+  } */
 
-  /* Cards in a Row */
   .carda {
     flex: 0 0 auto;
     width: 160px;
@@ -188,10 +163,19 @@ h1{
 
 .jb .row1 {
   grid-column: span 1;
+  padding-top: 65px;
 }
 
 .jb .row2{
   grid-column: span 4;
+}
+
+
+.icons i,
+.icons svg {
+  font-size: 1.5rem;
+  color: red;
+  border: 1px solid red;
 }
         .qr{
             width:150px;
@@ -343,8 +327,8 @@ h1{
                 </div>
               </div>
               <div class="carda card-with-line">
-                <div class="content">
-                  <h5 class="tile"><i class="fas fa-envelope"></i> Email</h5>
+                <div class="content" >
+                  <h5 class="tile"><i class="fa-solid fa-envelope" style="color:#fff !important;" ></i> Email</h5>
                   <a href="mailto:info@yardyadventures.com">info@yardyadventures.com</a>
                 </div>
               </div>
@@ -366,27 +350,27 @@ h1{
   <div class="row2">
   <div class="main-content">
     <!-- Contact Form Section -->
-    <div class="row gy-4 mt-5 p-5" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
+    <div class="row gy-4 mt-5 p-5" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; background-color: #28B9F5; border-radius: 8px;">
       <div class="col-lg-6" style="flex: 1; min-width: 300px;">
         <div class="contact-body">
-          <h4 class="contact__title">Message Us</h4>
+          <h4 class="contact__title" style="color:#fff;">Message Us</h4>
           <form id="contact-form" method="post" action="send_email.php" class="verify-gcaptcha">
             <input type="hidden" name="_token" value="ABjGCJ0EpcMltu2UVB6Q5sJPrApDI5HWWNiDgYtU" autocomplete="off">
             <div class="row gy-md-4 gy-3">
               <div class="col">
-                <h6 class="mb-2">Name</h6>
+                <h6 class="mb-2" style="color:#fff;">Name</h6>
                 <input type="text" name="name" id="name" class="form-control form--control" placeholder="Name" required>
               </div>
               <div class="col-sm-12">
-                <h6 class="mb-2">Email</h6>
+                <h6 class="mb-2" style="color:#fff;">Email</h6>
                 <input type="email" name="email" id="email" class="form-control form--control" placeholder="Email" required>
               </div>
               <div class="col-sm-12">
-                <h6 class="mb-2">Subject</h6>
+                <h6 class="mb-2" style="color:#fff;">Subject</h6>
                 <input type="text" name="subject" id="msg_subject" class="form-control form--control" placeholder="Subject" required>
               </div>
               <div class="col-sm-12">
-                <h6 class="mb-2">Message</h6>
+                <h6 class="mb-2" style="color:#fff;">Message</h6>
                 <textarea class="form--control" name="message" placeholder="Write Your Message"></textarea>
               </div>
               <div class="col-sm-12">
@@ -411,7 +395,7 @@ h1{
   </div>
  </section>
 
-<div class="d-flex justify-content-center align-items-center" style="height: auto; padding: 1rem 0;">
+<div class="d-flex justify-content-center align-items-center" style="height: auto; padding: 1rem 0; margin-top: 20px; margin-bottom: 40px; color: #fff; background-color: #28B9F5;">
   <h1 class="text-center m-0 p-0">Direction to Yardie</h1>
 </div>
 
