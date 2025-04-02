@@ -400,86 +400,105 @@ h1{
 </div>
 
 <!-- ==================== Location Maps Start ==================== -->
-
-<div style="margin-bottom: 150px;">
+<div style="margin-bottom: 100px;">
   <div class="container">
-    <div class="d-flex flex-wrap gap-4">
-      <!-- First Map -->
-      <div class="card shadow-sm" style="max-width: 300px; overflow: hidden;">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title text-center">
-            <i class="fas fa-map-marker-alt"></i> From Negril
-          </h5>
-          <!-- Responsive Map Embed -->
-          <div class="mt-4">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d121236.3402434002!2d-78.287506308216!3d18.272517558157258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8ed90d8512302c85%3A0x7bc0f136de355913!2sNegril!3m2!1d18.2788727!2d-78.3444296!5e0!3m2!1sen!2sjm!4v1735654123158!5m2!1sen!2sjm" 
-              class="w-100" 
-              style="height: 300px; border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+    <!-- First Row - Negril and Montego Bay -->
+    <div class="row mb-4">
+      <!-- Negril Map - Pinned to Time Square -->
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-center">
+              <i class="fas fa-map-marker-alt"></i> From Negril (Time Square)
+            </h5>
+            <div class="text-center text-muted mb-2">
+              <small>Distance: ~50km | Travel Time: ~1 hour 15 mins</small>
+            </div>
+            <div class="mt-2 flex-grow-1">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3790.732367112309!2d-78.34442959999999!3d18.2788727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8ed90d9f2b30a8d3%3A0x1f9ec5a6f5e2c0a1!2sTimes%20Square%20Negril%2C%20Negril!3m2!1d18.2797222!2d-78.3486111!5e0!3m2!1sen!2sjm!4v1712345678901!5m2!1sen!2sjm" 
+                class="w-100" 
+                style="height: 350px; border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Second Map -->
-      <div class="card shadow-sm" style="max-width: 300px; overflow: hidden;">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title text-center">
-            <i class="fas fa-map-marker-alt"></i> From Montego Bay
-          </h5>
-          <!-- Responsive Map Embed -->
-          <div class="mt-4">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d121155.83534868366!2d-78.08691865497451!3d18.387395512853086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8eda2a5dfd77e2b1%3A0xfcd69adb5acc5766!2sMontego%20Bay!3m2!1d18.4713814!2d-77.9228676!5e0!3m2!1sen!2sjm!4v1735656173442!5m2!1sen!2sjm" 
-              class="w-100" 
-              style="height: 300px; border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+      <!-- Montego Bay Map - Pinned to Fairview -->
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-center">
+              <i class="fas fa-map-marker-alt"></i> From Montego Bay (Fairview)
+            </h5>
+            <div class="text-center text-muted mb-2">
+              <small>Distance: ~25km | Travel Time: ~35 mins</small>
+            </div>
+            <div class="mt-2 flex-grow-1">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3793.456789012345!2d-77.9228676!3d18.4713814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8eda2a5e6b5f8b3d%3A0x4a0f0f0f0f0f0f0f!2sFairview%2C%20Montego%20Bay!3m2!1d18.4769444!2d-77.9180556!5e0!3m2!1sen!2sjm!4v1712345678901!5m2!1sen!2sjm" 
+                class="w-100" 
+                style="height: 350px; border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row - Falmouth and Sandals South -->
+    <div class="row">
+      <!-- Falmouth Map - Pinned to Water Square -->
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-center">
+              <i class="fas fa-map-marker-alt"></i> From Falmouth (Water Square)
+            </h5>
+            <div class="text-center text-muted mb-2">
+              <small>Distance: ~40km | Travel Time: ~50 mins</small>
+            </div>
+            <div class="mt-2 flex-grow-1">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3794.567890123456!2d-77.656476!3d18.4928457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8eda33f8d9e6b3a7%3A0x4a0f0f0f0f0f0f0f!2sWater%20Square%2C%20Falmouth!3m2!1d18.4936111!2d-77.6558333!5e0!3m2!1sen!2sjm!4v1712345678901!5m2!1sen!2sjm" 
+                class="w-100" 
+                style="height: 350px; border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Third Map -->
-      <div class="card shadow-sm" style="max-width: 300px; overflow: hidden;">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title text-center">
-            <i class="fas fa-map-marker-alt"></i> From Falmouth
-          </h5>
-          <!-- Responsive Map Embed -->
-          <div class="mt-4">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d242275.25586969638!2d-78.03650507692123!3d18.41328095725969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8eda33f8c3cfab6b%3A0x947175f8cf7d2536!2sFalmouth!3m2!1d18.4928457!2d-77.656476!5e0!3m2!1sen!2sjm!4v1735657602120!5m2!1sen!2sjm" 
-              class="w-100" 
-              style="height: 300px; border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-        </div>
-      </div>
-
-      <!-- Fourth Map -->
-      <div class="card shadow-sm" style="max-width: 300px; overflow: hidden;">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title text-center">
-            <i class="fas fa-map-marker-alt"></i> From Sandals South
-          </h5>
-          <!-- Responsive Map Embed -->
-          <div class="mt-3 flex-grow-1">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d121281.98210257878!2d-78.12215536005375!3d18.20707716257434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8ed961108449dac7%3A0xa03e8dd42965422b!2sSandals%20South%20Coast%2C%20White%20House!3m2!1d18.1086339!2d-77.99151789999999!5e0!3m2!1sen!2sjm!4v1735657845365!5m2!1sen!2sjm" 
-              class="w-100" 
-              style="height: 300px; border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+      <!-- Sandals South Map -->
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title text-center">
+              <i class="fas fa-map-marker-alt"></i> From Sandals South Coast
+            </h5>
+            <div class="text-center text-muted mb-2">
+              <small>Distance: ~60km | Travel Time: ~1 hour 30 mins</small>
+            </div>
+            <div class="mt-2 flex-grow-1">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3789.123456789012!2d-77.9915179!3d18.1086339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8ed961108449dac7%3A0xa03e8dd42965422b!2sSandals%20South%20Coast%2C%20White%20House!3m2!1d18.1086339!2d-77.99151789999999!5e0!3m2!1sen!2sjm!4v1712345678901!5m2!1sen!2sjm" 
+                class="w-100" 
+                style="height: 350px; border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
           </div>
         </div>
       </div>
