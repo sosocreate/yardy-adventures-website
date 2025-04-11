@@ -208,14 +208,106 @@ h1{
 .ratio iframe {
     width: 100%;
     height: 100%;
-    aspect-ratio: 4 / 3; /* Explicitly enforce the aspect ratio */
-    border: 0; /* Ensure no unwanted border adds extra space */
+    aspect-ratio: 4 / 3;
+    border: 0;
 }
+  .jb {
+    padding-top: 2rem; 
+  }
+  
+  .message-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    background-color: #28B9F5;
+    border-radius: 8px;
+  }
+  
+  .col-lg-6 {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contact__title, .mb-2 {
+    color: #fff !important;
+  }
+  
+  .thumb-container {
+    text-align: center;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Mobile responsive styles */
+  @media (max-width: 768px) {
+    .jb {
+      display: flex;
+      flex-direction: column;
+      padding-top: 3rem; 
+    }
+    
+    .cards-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .carda {
+      width: 100%;
+      margin-bottom: 0;
+    }
+    
+    .row1, .row2 {
+      width: 100%;
+    }
+    
+    .message-container {
+      margin-top: 1rem; 
+      padding: 1.5rem !important; 
+    }
+  }
+  
+  /* Default styles for larger screens */
+  @media (min-width: 769px) {
+    .jb {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 2rem;
+    }
+    
+    .row1 {
+      flex: 0 0 30%;
+      max-width: 30%;
+      padding-right: 15px;
+    }
+    
+    .row2 {
+      flex: 0 0 70%;
+      max-width: 70%;
+      padding-left: 15px;
+    }
+    
+    .cards-container {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .carda {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    
+    .message-container {
+      padding: 3rem !important; 
+    }
+  }
 
+</style>
 
-
-
-    </style>
     
     
     
@@ -316,84 +408,82 @@ h1{
 <section style="display: flex; align-items: flex-start; gap: 2rem; padding: 2rem; ">
  
 </section>
+
 <section class="jb">
-   <div class="row1">
-          <!-- Cards Container -->
-          <div class="sticky-sidebar mocha ">
-              <div class="carda card-with-line">
-                <div class="content">
-                  <h5 class="tile"><i class="fas fa-map-marker-alt"></i> Address</h5>
-                  <a href="">Fort William, Petersfield, Westmoreland</a>
-                </div>
-              </div>
-              <div class="carda card-with-line">
-                <div class="content" >
-                  <h5 class="tile"><i class="fa-solid fa-envelope" style="color:#fff !important;" ></i> Email</h5>
-                  <a href="mailto:info@yardyadventures.com">info@yardyadventures.com</a>
-                </div>
-              </div>
-              <div class="carda card-with-line">
-                <div class="content">
-                  <h5 class="tile"><i class="fas fa-phone-square"></i> Whatsapp Phone</h5>
-                  <a href="tel:8768378082">8768378082</a>
-                </div>
-              </div>
-              <div class="carda card-with-line">
-                <div class="content">
-                  <h5 class="tile"><i class="fas fa-phone-square"></i> Telephone</h5>
-                  <a href="tel:8767811741">8767811741</a>
-                </div>
-              </div>
-            </div>
-    </div>
- <!-- Main Content -->
-  <div class="row2">
-  <div class="main-content">
-    <!-- Contact Form Section -->
-    <div class="row gy-4 mt-5 p-5" style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; background-color: #28B9F5; border-radius: 8px;">
-      <div class="col-lg-6" style="flex: 1; min-width: 300px;">
-        <div class="contact-body">
-          <h4 class="contact__title" style="color:#fff;">Message Us</h4>
-          <form id="contact-form" method="post" action="send_email.php" class="verify-gcaptcha">
-            <input type="hidden" name="_token" value="ABjGCJ0EpcMltu2UVB6Q5sJPrApDI5HWWNiDgYtU" autocomplete="off">
-            <div class="row gy-md-4 gy-3">
-              <div class="col">
-                <h6 class="mb-2" style="color:#fff;">Name</h6>
-                <input type="text" name="name" id="name" class="form-control form--control" placeholder="Name" required>
-              </div>
-              <div class="col-sm-12">
-                <h6 class="mb-2" style="color:#fff;">Email</h6>
-                <input type="email" name="email" id="email" class="form-control form--control" placeholder="Email" required>
-              </div>
-              <div class="col-sm-12">
-                <h6 class="mb-2" style="color:#fff;">Subject</h6>
-                <input type="text" name="subject" id="msg_subject" class="form-control form--control" placeholder="Subject" required>
-              </div>
-              <div class="col-sm-12">
-                <h6 class="mb-2" style="color:#fff;">Message</h6>
-                <textarea class="form--control" name="message" placeholder="Write Your Message"></textarea>
-              </div>
-              <div class="col-sm-12">
-                <button class="btn--base" id="recaptcha">Send Message</button>
-              </div>
-            </div>
-          </form>
+  <!-- Cards Container -->
+  <div class="row1">
+    <div class="sticky-sidebar mocha cards-container">
+      <div class="carda card-with-line">
+        <div class="content">
+          <h5 class="tile"><i class="fas fa-map-marker-alt"></i> Address</h5>
+          <a href="">Fort William, Petersfield, Westmoreland</a>
         </div>
       </div>
+      <div class="carda card-with-line">
+        <div class="content">
+          <h5 class="tile"><i class="fa-solid fa-envelope" style="color:#fff !important;"></i> Email</h5>
+          <a href="mailto:info@yardyadventures.com">info@yardyadventures.com</a>
+        </div>
+      </div>
+      <div class="carda card-with-line">
+        <div class="content">
+          <h5 class="tile"><i class="fas fa-phone-square"></i> Whatsapp Phone</h5>
+          <a href="tel:8768378082">8768378082</a>
+        </div>
+      </div>
+      <div class="carda card-with-line">
+        <div class="content">
+          <h5 class="tile"><i class="fas fa-phone-square"></i> Telephone</h5>
+          <a href="tel:8767811741">8767811741</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Message Panel -->
+  <div class="row2">
+    <div class="main-content">
+      <div class="row gy-4 p-5 message-container">
+        <div class="col-lg-6">
+          <div class="contact-body">
+            <h4 class="contact__title">Message Us</h4>
+            <form id="contact-form" method="post" action="send_email.php" class="verify-gcaptcha">
+              <input type="hidden" name="_token" value="ABjGCJ0EpcMltu2UVB6Q5sJPrApDI5HWWNiDgYtU" autocomplete="off">
+              <div class="row gy-md-4 gy-3">
+                <div class="col">
+                  <h6 class="mb-2">Name</h6>
+                  <input type="text" name="name" id="name" class="form-control form--control" placeholder="Name" required>
+                </div>
+                <div class="col-sm-12">
+                  <h6 class="mb-2">Email</h6>
+                  <input type="email" name="email" id="email" class="form-control form--control" placeholder="Email" required>
+                </div>
+                <div class="col-sm-12">
+                  <h6 class="mb-2">Subject</h6>
+                  <input type="text" name="subject" id="msg_subject" class="form-control form--control" placeholder="Subject" required>
+                </div>
+                <div class="col-sm-12">
+                  <h6 class="mb-2">Message</h6>
+                  <textarea class="form--control" name="message" placeholder="Write Your Message"></textarea>
+                </div>
+                <div class="col-sm-12">
+                  <button class="btn--base" id="recaptcha">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
 
-      <!-- Image Section -->
-      <div class="col-lg-6" style="flex: 1; min-width: 300px; text-align: center;">
-        <div class="thumb">
-          <div class="mt-5 mt-lg-0">
+        <div class="col-lg-6 thumb-container">
+          <div class="thumb">
             <img src="https://yardyadventures.com/demo/assets/images/frontend/contact_us/touristman.png"
-                 class="img-fluid" alt="image" style="max-width: 100%; height: auto;">
+                 class="img-fluid" alt="image">
           </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
- </section>
+</section>
 
 <div class="d-flex justify-content-center align-items-center" style="height: auto; padding: 1rem 0; margin-top: 20px; margin-bottom: 40px; color: #fff; background-color: #28B9F5;">
   <h1 class="text-center m-0 p-0">Direction to Yardie</h1>
@@ -409,11 +499,8 @@ h1{
         <div class="card shadow-sm h-100">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title text-center">
-              <i class="fas fa-map-marker-alt"></i> From Negril (Time Square)
+              <i class="fas fa-map-marker-alt"></i> From Negril 
             </h5>
-            <div class="text-center text-muted mb-2">
-              <small>Distance: ~50km | Travel Time: ~1 hour 15 mins</small>
-            </div>
             <div class="mt-2 flex-grow-1">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3790.732367112309!2d-78.34442959999999!3d18.2788727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8ed90d9f2b30a8d3%3A0x1f9ec5a6f5e2c0a1!2sTimes%20Square%20Negril%2C%20Negril!3m2!1d18.2797222!2d-78.3486111!5e0!3m2!1sen!2sjm!4v1712345678901!5m2!1sen!2sjm" 
@@ -433,11 +520,8 @@ h1{
         <div class="card shadow-sm h-100">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title text-center">
-              <i class="fas fa-map-marker-alt"></i> From Montego Bay (Fairview)
+              <i class="fas fa-map-marker-alt"></i> From Montego Bay 
             </h5>
-            <div class="text-center text-muted mb-2">
-              <small>Distance: ~25km | Travel Time: ~35 mins</small>
-            </div>
             <div class="mt-2 flex-grow-1">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3793.456789012345!2d-77.9228676!3d18.4713814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8eda2a5e6b5f8b3d%3A0x4a0f0f0f0f0f0f0f!2sFairview%2C%20Montego%20Bay!3m2!1d18.4769444!2d-77.9180556!5e0!3m2!1sen!2sjm!4v1712345678901!5m2!1sen!2sjm" 
@@ -460,11 +544,8 @@ h1{
         <div class="card shadow-sm h-100">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title text-center">
-              <i class="fas fa-map-marker-alt"></i> From Falmouth (Water Square)
+              <i class="fas fa-map-marker-alt"></i> From Falmouth 
             </h5>
-            <div class="text-center text-muted mb-2">
-              <small>Distance: ~40km | Travel Time: ~50 mins</small>
-            </div>
             <div class="mt-2 flex-grow-1">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3794.567890123456!2d-77.656476!3d18.4928457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8eda33f8d9e6b3a7%3A0x4a0f0f0f0f0f0f0f!2sWater%20Square%2C%20Falmouth!3m2!1d18.4936111!2d-77.6558333!5e0!3m2!1sen!2sjm!4v1712345678901!5m2!1sen!2sjm" 
@@ -486,9 +567,6 @@ h1{
             <h5 class="card-title text-center">
               <i class="fas fa-map-marker-alt"></i> From Sandals South Coast
             </h5>
-            <div class="text-center text-muted mb-2">
-              <small>Distance: ~60km | Travel Time: ~1 hour 30 mins</small>
-            </div>
             <div class="mt-2 flex-grow-1">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3789.123456789012!2d-77.9915179!3d18.1086339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8ed97a4cafe6c987%3A0x796af9a25aca6896!2sYardy%20River%20Adventures!3m2!1d18.305555599999998!2d-78.0658333!4m5!1s0x8ed961108449dac7%3A0xa03e8dd42965422b!2sSandals%20South%20Coast%2C%20White%20House!3m2!1d18.1086339!2d-77.99151789999999!5e0!3m2!1sen!2sjm!4v1712345678901!5m2!1sen!2sjm" 
