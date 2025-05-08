@@ -499,7 +499,7 @@ h1{
         <div class="card shadow-sm h-100">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title text-center">
-              <i class="fas fa-map-marker-alt"></i> From Negril 
+              <i class="fas fa-map-marker-alt"></i>Negril 
             </h5>
             <div class="mt-2 flex-grow-1">
               <iframe 
@@ -520,7 +520,7 @@ h1{
         <div class="card shadow-sm h-100">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title text-center">
-              <i class="fas fa-map-marker-alt"></i> From Montego Bay 
+              <i class="fas fa-map-marker-alt"></i> Montego Bay 
             </h5>
             <div class="mt-2 flex-grow-1">
               <iframe 
@@ -544,7 +544,7 @@ h1{
         <div class="card shadow-sm h-100">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title text-center">
-              <i class="fas fa-map-marker-alt"></i> From Falmouth 
+              <i class="fas fa-map-marker-alt"></i>Falmouth 
             </h5>
             <div class="mt-2 flex-grow-1">
               <iframe 
@@ -565,7 +565,7 @@ h1{
         <div class="card shadow-sm h-100">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title text-center">
-              <i class="fas fa-map-marker-alt"></i> From Sandals South Coast
+              <i class="fas fa-map-marker-alt"></i>Sandals South Coast
             </h5>
             <div class="mt-2 flex-grow-1">
               <iframe 
